@@ -90,18 +90,6 @@
 
     <!-- Main content area -->
 
-    <!-- div class="container main-content-container">
-      <div class="row">
-        <div class="span2">
-          <img id="logo" src="/images/logo.png">
-        </div>
-
-        <div class="span10 main-content">
-            {{ content }}
-        </div>
-      </div>
-    </div -->
-
     <div class="container">
       <div class="content">
         <header class="page-header">
@@ -113,26 +101,24 @@
           </div>
           <nav class="span3">
             <h3>Recent Posts</h3>
+            <hr />
             <div id="posts">
               {% for post in site.posts limit:10%}
                 <p><a href="/blog{{ post.url }}">{{ post.title }}</a></p>
               {% endfor %}
+              <hr>
+              <p>powered by <a href="https://github.com/mojombo/jekyll">jekyll</a></p>
             </div>
           </nav>
         </div>
       </div>
-      <footer>
-        <p>powered by <a href="https://github.com/mojombo/jekyll">jekyll</a></p>
-      </footer>
+      <hr />
+      {% include footer.html %}
     </div> 
 
   </div> 
 
   <!-- End Main content area -->
-
-  {% if site.github %}
-    <a href="http://github.com/{{ site.github.username }}"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub" /></a>
-  {% endif %}
 
 </body>
 </html>

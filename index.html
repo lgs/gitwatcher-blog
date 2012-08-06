@@ -3,11 +3,10 @@ layout: default
 title: GitWatcher Blog 
 ---
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="/blog{{ post.url }}">{{ post.title }}</a></li>
+      <div class="hero-unit">
+        <p><h2><a href="/blog{{ post.url }}">{{ post.title }}</a></h2>{{ post.date | date_to_string }}</p>
+        <p>{{ post.content | strip_html | truncatewords: 55 }}</p>
+        <p><a href="/blog{{ post.url }}">Read more ...</a></p>
+      </div>
     {% endfor %}
-  </ul>
-</div>
