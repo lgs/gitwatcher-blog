@@ -10,10 +10,12 @@
    <link rel="stylesheet" href="/blog/css/syntax.css" type="text/css" />
 
    <!-- Twitter Bootstrap CSS -->
-   <link rel="stylesheet" href="/blog/css/bootstrap.min.css" type="text/css" media="screen, projection" />
+   <!-- link rel="stylesheet" href="/blog/css/bootstrap.min.css" type="text/css" media="screen, projection" / -->
+   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">
 
    <!-- Typekit -->
-   <script type="text/javascript" src="/blog/js/bootstrap.min.js"></script>
+   <!-- script type="text/javascript" src="/blog/js/bootstrap.min.js"></script -->
+   <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/js/bootstrap.min.js"></script>
    <script type="text/javascript" src="http://use.typekit.com/jpd0pfm.js"></script>
    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
@@ -100,6 +102,14 @@
             {{ content }}
           </div>
           <nav class="span3">
+            <div id="social networks" class="rss twitter" >
+              <a href="http://feeds.feedburner.com/GitwatcherBlog">
+                <img src="http://gitwatcher.com/blog/img/icons_32x32px/rss.png" alt="Subscribe to RSS Feed" />
+              </a>
+              <a href="https://twitter.com/gitwatcher">
+                <img src="http://gitwatcher.com/blog/img/icons_32x32px/twitter_1.png" alt="Follow us on Twitter" />
+              </a>
+            </div>
             <h3>Recent Posts</h3>
             <hr />
             <div id="posts">

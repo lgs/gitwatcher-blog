@@ -5,12 +5,13 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
  
  <title>GitWatcher Blog</title>
- <link href="http://gitwatcher.com/blog/atom.xml" rel="self"/>
- <link href="http://gitwatcher.com/blog"/>
+ <link href="http://gitwatcher.com/blog/feed/atom.xml" rel="self"/>
+ <link href="http://gitwatcher.com/blog/feed"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://gitwatcher.com/blog</id>
+ <id>http://gitwatcher.com/blog/feed</id>
  <author>
    <name>Luca G. Soave</name>
+   <email>luca.soave@gmail.com</email>
  </author>
 
  {% for post in site.posts %}
@@ -18,7 +19,7 @@ layout: nil
    <title>{{ post.title }}</title>
    <link href="http://gitwatcher.com/blog{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>BLOG_URL{{ post.id }}</id>
+   <id>http://gitwatcher.com/blog{{ post.id }}.html</id>
    <content type="html">{{ post.content | xml_escape }}</content>
  </entry>
  {% endfor %}

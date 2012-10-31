@@ -49,14 +49,14 @@ repository, which means that in my case, searching for_ "authentication
 omniath" _will find the following five responces :
 
 
-![](http://media.tumblr.com/tumblr_lyhebrQXmj1r5qp5l.png)
+![](http://gitwatcher.com/blog/img/full_text_search.png)
 
 
 but searching for _"rack __authentication omniath"_  gets back  just one
 responce, as you can see :
 
 
-![](http://media.tumblr.com/tumblr_lyhecavJ7m1r5qp5l.png)
+![](http://gitwatcher.com/blog/img/full_text_search_result.png)
 
 
 Very simple, but is what we need at the moment. Any feedback is welcome.

@@ -11,13 +11,13 @@ Then you hit the watch button and in a blink of eyes, your "Watched
 Repositories" list, grows to the point it will be very difficult looking for
 something when you will have to ( my own list count 1641 repos, today ).
 
-That's the way  GitWatcher has been thought, sync and watch your github watch-
-list is just a matter of "[sign in](http://gitwatcher.com/auth/github)", if
+That's the way  GitWatcher has been thought, sync and watch your github watch-list 
+is just a matter of "[sign in](http://gitwatcher.com/auth/github)", if
 you already have a GitHub account, infact, it utilize GitHub as authentication
 system provider.
 
 
-![](http://media.tumblr.com/tumblr_lxdj63p5xr1r5qp5l.png)
+![](http://gitwatcher.com/blog/img/watchlist.png)
 
 
 Now you are logged in and you will see the list of all repositories you are
@@ -25,7 +25,7 @@ watching on GitHub. Then you can assign an arbitrary tag (or multiple) to any
 repository, being able to find it again the next time you need it.
 
 
-![](http://media.tumblr.com/tumblr_lxngtnvDZ01r5qp5l.png)
+![](http://gitwatcher.com/blog/img/add_tag.png)
 
 
 By clicking on the respective column header, you can also reorder your list,
@@ -41,7 +41,7 @@ you will be able to display just the repositories tagged with "css3", for
 example ( see following image ).
 
 
-![](http://media.tumblr.com/tumblr_lxe6d8a0x91r5qp5l.png)
+![](http://gitwatcher.com/blog/img/by_tag_dropdown.png)
 
 
 At this point, sorting by number of watchers you can have a quick filling of

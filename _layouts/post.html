@@ -7,11 +7,21 @@ comments: true
     <h2>
       <a href="/blog{{ page.url }}" rel="bookmark" title="Permanent link to ">{{ page.title }}</a>
     </h2>
-    <h5><time>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</time></h5>
+    <h5>
+        <!-- avatar><img 
+		class="avatar"
+		src="http://s.gravatar.com/avatar/{{ site.gravatar }}?s=40"
+		alt="{{ site.author }}"
+		width="40"
+		height="40">
+        </avatar -->
+        <time>{{ page.date | date: '%B' }} {{ page.date | date: '%e' }}, {{ page.date | date: '%Y' }}</time> - 
+        <author>{{ site.author }}</author>
+    </h5>
   </header>
 
   <p /><br /><p />{{ content }}
-   
+
 <div class="hero-unit">
   <nav id="related">
     <h3>Related Posts</h3>
